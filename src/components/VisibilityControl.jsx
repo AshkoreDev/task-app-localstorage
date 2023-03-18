@@ -5,6 +5,7 @@ const VisibilityControl = ({ setShowCompleted, cleanTasks, isChecked }) => {
   const handleShowCompleted = (e) => setShowCompleted(e.target.checked); 
 
   const handleClean = () => {
+    
     if(window.confirm('¿Estás seguro de eliminar las tareas hechas?')) {
       cleanTasks();
     }

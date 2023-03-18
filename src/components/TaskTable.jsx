@@ -6,9 +6,11 @@ const TaskTable = ({ title, tasks, toggleTask, showCompleted = false }) => {
   const taskTableRows = (doneValue) =>  {
 
     return (
+
       tasks
-      .filter(task => task.done === doneValue)
-      .map((task) => <TaskRow key={task.name} task={task} toggleTask={toggleTask}/>)
+        .filter(task => task.done === doneValue)
+        .map((task) => <TaskRow key={task.name} task={task} toggleTask={toggleTask}/>)
+
     );
   };
 
@@ -23,9 +25,7 @@ const TaskTable = ({ title, tasks, toggleTask, showCompleted = false }) => {
       </thead>
 
       <tbody>
-        {
-         taskTableRows(showCompleted)
-        }
+        { taskTableRows(showCompleted) }
       </tbody>
 
     </table>

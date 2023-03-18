@@ -43,8 +43,8 @@ function App() {
 
   return (
     
-    <div className="bg-dark vh-100 text-white">
-      <div className="container col-md-4 offset-md-4 p-4">
+    <div className="bg-dark min-vh-100 text-white">
+      <div className="container col-md-4 offset-md-4 p-2">
       
         <TaskCreator createNewTask={createNewTask}/>
         <TaskTable title="Tareas por hacer" tasks={tasks} toggleTask={toggleTask}/>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const TaskCreator = ({ createNewTask }) => {
 
@@ -15,16 +15,13 @@ const TaskCreator = ({ createNewTask }) => {
 
   return (
 
-    <section>
-      <form onSubmit={handleSubmit} className="my-5 row">
-        <div className="col-9">
-          <input type="text" placeholder="Ingresar una nueva tarea" value={newTask} onChange={handleChange} className="form-control text-capitalize"/>
-        </div>
-        <div className="col-3">
-          <button className="btn btn-success btn-md">Guardar</button>
-        </div>
-      </form>
-    </section>
+    <form onSubmit={handleSubmit} className="my-4 d-flex gap-2">
+
+      <input type="text" placeholder="Nueva Tarea" value={newTask} onChange={handleChange} className="form-control"/>
+
+      <button className="btn btn-success btn-md">Guardar</button>
+
+    </form>
 
   );
 };
