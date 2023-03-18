@@ -10,7 +10,7 @@ function App() {
 
   const createNewTask = (taskName) => {
     
-    if(!tasks.find((task) => task.name === taskName)) {
+    if(!tasks.find((task) => task.name === taskName) && taskName !== '') {
       setTasks([...tasks, { name: taskName, done: false }]);
     }
   };
