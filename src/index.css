@@ -12,3 +12,11 @@ body::-webkit-scrollbar-thumb {
   background: #fff;
   border-radius: 4px;
 }
+
+input[type="checkbox"]:checked {
+  accent-color: #198754;
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}

@@ -9,7 +9,7 @@ const TaskRow = ({ task, toggleTask }) => {
     <tr>
       <td className="d-flex justify-content-between">
         <span className={task.done ? "text-muted" : "text-white"}>{task.name}</span>
-        <input type="checkbox" checked={task.done} onChange={handleCheckbox}/>
+        <input type="checkbox" checked={task.done} onChange={handleCheckbox} className="inputCheckbox"/>
       </td>
     </tr>
 

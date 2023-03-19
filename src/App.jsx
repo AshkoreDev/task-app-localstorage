@@ -50,7 +50,7 @@ function App() {
         <TaskTable title="Tareas por hacer" tasks={tasks} toggleTask={toggleTask}/>
         <VisibilityControl setShowCompleted={handleShowCompleted} cleanTasks={cleanTasks} isChecked={showCompleted}/>
         {
-          showCompleted && (<TaskTable title="Tareas hechas" tasks={tasks} toggleTask={toggleTask} showCompleted={showCompleted}/>)
+          showCompleted && (<TaskTable title="Tareas hechas" tasks={tasks} toggleTask={toggleTask} showCompleted={showCompleted} className="tablea"/>)
         }
 
       </div>
