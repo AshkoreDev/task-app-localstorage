@@ -1,6 +1,5 @@
-import React from "react";
 
-const TaskRow = ({ task, toggleTask }) => {
+function TaskRow({ task, toggleTask }) {
 
   const handleCheckbox = () => toggleTask(task);
 

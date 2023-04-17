@@ -1,4 +1,4 @@
-import React , { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import TaskCreator from './components/TaskCreator.jsx';
 import TaskTable from './components/TaskTable.jsx';
 import VisibilityControl from './components/VisibilityControl.jsx';

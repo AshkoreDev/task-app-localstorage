@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-const TaskCreator = ({ createNewTask }) => {
+function TaskCreator({ createNewTask }) {
 
   const [newTask, setNewTask] = useState('');
 

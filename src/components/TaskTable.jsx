@@ -1,14 +1,13 @@
-import React from "react";
-import TaskRow from "./TaskRow";
+import TaskRow from './TaskRow.jsx';
 
-const TaskTable = ({ title, tasks, toggleTask, showCompleted = false }) => {
+function TaskTable({ title, tasks, toggleTask, showCompleted = false }) {
 
   const taskTableRows = (doneValue) =>  {
 
     return (
 
       tasks
-        .filter(task => task.done === doneValue)
+        .filter((task) => task.done === doneValue)
         .map((task) => <TaskRow key={task.name} task={task} toggleTask={toggleTask}/>)
 
     );
